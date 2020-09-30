@@ -11,6 +11,18 @@ public abstract class OrdinamentoBase {
 	
 	private int[] elementi;
 
+	public int[] getElementi() {
+		return elementi;
+	}
+
+
+
+	public void setElementi(int[] elementi) {
+		this.elementi = elementi;
+	}
+
+
+
 	public OrdinamentoBase() {
 		BasicConfigurator.configure();  
 	}
@@ -29,8 +41,9 @@ public abstract class OrdinamentoBase {
 		StringBuffer sb = new StringBuffer();
 		for (int i=0; i<elementi.length; i++) {
 			sb.append(elementi[i]);
-			if (i < elementi.length-1) {}
+			if (i < elementi.length-1) {
 				sb.append(" - ");
+			}
 		}		
 		return sb.toString();
 	}
