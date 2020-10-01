@@ -1,9 +1,7 @@
 package algoritminotevoli;
 
-import org.apache.log4j.BasicConfigurator;
-import org.apache.log4j.LogManager;
-
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public abstract class OrdinamentoBase {
 	
@@ -24,13 +22,11 @@ public abstract class OrdinamentoBase {
 
 
 	public OrdinamentoBase() {
-		BasicConfigurator.configure();  
 	}
 	
 	
 	
 	public OrdinamentoBase(int[] elementiInput) {
-		BasicConfigurator.configure();  
 		elementi = elementiInput;
 	}
 
@@ -50,5 +46,6 @@ public abstract class OrdinamentoBase {
 	
 	
 	public abstract String stampaTitoloOrdinamento(); 
+	
 	
 }
