@@ -21,8 +21,11 @@ public class Esecuzione {
 	    Configurator.setRootLevel(Level.DEBUG);
 		
 		// sezione inizializzazione algoritmi
-		OrdinamentoBase ordinamento = new SimpleSort(randomIntArray());
-		
+	    OrdinamentoBase ordinamento;
+		//ordinamento = new SimpleSort(randomIntArray());
+		//ordinamento = new BubbleSort(randomIntArray());
+		ordinamento = new ShellSort(randomIntArray());
+
 		
 		
 		// esecuzione
