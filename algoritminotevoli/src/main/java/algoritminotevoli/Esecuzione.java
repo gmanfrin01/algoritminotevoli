@@ -24,7 +24,8 @@ public class Esecuzione {
 	    OrdinamentoBase ordinamento;
 		//ordinamento = new SimpleSort(randomIntArray());
 		//ordinamento = new BubbleSort(randomIntArray());
-		ordinamento = new ShellSort(randomIntArray());
+		//ordinamento = new ShellSort(randomIntArray());
+		ordinamento = new InsertionSort(randomIntArray());
 
 		
 		
